@@ -1,0 +1,350 @@
+:root {
+--accent-color: #2196F3;
+--accent-color-secondary: #ffffff;
+--main-font: 'Roboto',sans-serif;
+--secondary-font: 'Raleway',sans-serif;
+--main-color: #757575;
+--secondary-color: #212121;
+}
+
+body {
+  font-family: var(--main-font);
+  }
+  ul {
+    list-style: none;
+  }
+a {
+  text-decoration: none;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+   margin: 0;
+ }
+ ul,ol {
+   margin: 0;
+   padding: 0;
+ }
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+
+}
+
+/* =============HEADER=========== */
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.header .logo-header {
+  margin-right: 93px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-header-list {
+  display: flex;
+  }
+
+.address-header {
+  margin-left: auto;
+  }
+
+  .address-header-lsit-item {
+    margin-left: 50px;
+  }
+
+
+
+.logo-header {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.logo-header:focus,
+.logo-header:hover {
+ 
+}
+
+.logo-web {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.address-header-item-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.address-header-item-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  text-decoration: none;
+
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-header-lsit-item:hover,
+.address-header-lsit-item:focus {
+ color: var(--accent-color);
+}
+/* =============END HEADER=========== */
+
+/* ==============HERO============== */
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  width: 696px;
+  height: 120px;
+  margin: 0 auto;
+  
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+/* color: #FFFFFF; */
+}
+
+.modal-btn {
+  min-width: 200px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+ 
+
+  background-color: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #FFFFFF; 
+}
+/* ==============END HERO============ */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: imset(100%);
+  clip: rect(0 0 0 0);
+}
+
+/* ============SKILLS=========== */
+.skills-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+
+  .skills-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+.title {
+  width: 270px;
+  height: 16px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.text {
+width: 270px;
+height: 75px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color:var(--main-color);
+}
+
+/* ===============END SKILLS============= */
+
+/* ==============ABOUT============== */
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/* ==================END ABOUT======== */
+
+/* ==============TEAM============== */
+.item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+   color: var(--secondary-color);
+}
+
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+/* ==============END TEAM========== */
+
+/* ==============FOOTER============ */
+
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  /* color: #FFFFFF;  */
+}
+
+.footer-address-list-navigation {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: none;
+/* color: #FFFFFF; */
+}
+
+.footer-address-list-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  /* color: rgba(255, 255, 255, 0.6); */
+}
+
+.footer-address-list-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  /* color: rgba(255, 255, 255, 0.6); */
+  }
+
+/* ==========END FOOTER======== */
+
+
+/* ========FILTERS========= */
+
+.filters-list-item-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+ }
+
+ .filters-list-item-button:hover,
+ .filters-list-item-button:focus,
+ .modal-btn:hover,
+ .modal-btn:focus {
+   color: var(--accent-color-secondary);
+ }
+ 
+ /* ==============END FILTERS======== */
+
+ /* ==============WORK=========== */
+ .work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color)
+  
+ }
+
+ .work-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color:var(--main-color)
+  
+ }
+
+.navigation-list-link.current {
+   color: var(--accent-color);
+ }
+
+ /* ==============END WORK=========== */
