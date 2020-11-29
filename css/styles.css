@@ -36,9 +36,10 @@ img {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  /* background-color: #ccc; */
+  background-color: #ccc;  
   align-items: center;
   display: flex;
+  
 
 }
 
@@ -47,6 +48,7 @@ img {
 .header {
   padding-top: 25px;
   padding-bottom: 24px;
+  
 }
 
 .navigation {
@@ -59,6 +61,9 @@ img {
 }
 
 .header .logo-header {
+  margin-right: 93px;
+}
+.header-portfolio .logo-header {
   margin-right: 93px;
 }
 
@@ -92,7 +97,7 @@ img {
 
 .logo-header:focus,
 .logo-header:hover {
- 
+ color: var(--accent-color);
 }
 
 .logo-web {
@@ -332,12 +337,6 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
-
-
-
-
-
-
 /* ==============END TEAM========== */
 
 /* ==============FOOTER============ */
@@ -417,10 +416,45 @@ border-radius: 0px 0px 4px 4px;
 
 /* ==========END FOOTER======== */
 
+/* ==================HEADER-PORTFOLIO=========== */
+.header-portfolio {
+  padding-top: 25px;
+  padding-bottom: 24px;
+  border: 1px solid #ECECEC;
+}
+/* ==========END HEADER-PORTFOLIO============ */
 
 /* ========FILTERS========= */
+.container-filters {
+   width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+   background-color: #ccc;
+   align-items: center;
+   
 
-.filters-list-item-button {
+}
+
+.filters-list {
+  display: flex;
+  justify-content: center;
+  }
+
+
+
+ 
+ 
+
+ .filters-list-item-button {
+ display: block;
+ height: 38px;
+
+  background: #F5F4FA;
+  border-radius: 4px;
+  padding: 6 22px;
+ 
+  margin-right: 8px;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -431,9 +465,7 @@ border-radius: 0px 0px 4px 4px;
  }
 
  .filters-list-item-button:hover,
- .filters-list-item-button:focus,
- .modal-btn:hover,
- .modal-btn:focus {
+ .filters-list-item-button:focus {
    color: var(--accent-color-secondary);
  }
  
