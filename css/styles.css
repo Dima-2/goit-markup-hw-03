@@ -36,7 +36,7 @@ img {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  background-color: #ccc;  
+  /* background-color: #ccc;   */
   align-items: center;
   display: flex;
   
@@ -153,7 +153,7 @@ img {
 /* ==============HERO============== */
 .hero {
   text-align: center;
-  width: 1600px;
+  width: auto;
   height: 600px;
   background-color: #2F303A;
 }
@@ -321,6 +321,7 @@ img {
   
 }
 
+
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -350,7 +351,7 @@ border-radius: 0px 0px 4px 4px;
 .footer {
  background-color: #2F303A;
  display: block;
- width: 1600px;
+ width: auto;
  height: 252px;
   
 }
@@ -429,7 +430,7 @@ border-radius: 0px 0px 4px 4px;
    width: 1200px;
    padding: 0 15px;
    margin: 0 auto;
-   background-color: #ccc;
+   /* background-color: #ccc; */
    align-items: center;
    
 
@@ -438,21 +439,17 @@ border-radius: 0px 0px 4px 4px;
 .filters-list {
   display: flex;
   justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 34px;
   }
 
-
-
- 
- 
-
- .filters-list-item-button {
+.filters-list-item-button {
  display: block;
  height: 38px;
 
   background: #F5F4FA;
   border-radius: 4px;
-  padding: 6 22px;
- 
+  
   margin-right: 8px;
   
   font-weight: 500;
@@ -462,24 +459,59 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   color: #212121;
   text-decoration: none;
+  border: unset;
  }
 
- .filters-list-item-button:hover,
+ 
+
+ .filters-text {
+   margin: 6px 22px;
+ }
+
+  .filters-list-item-button:hover,
  .filters-list-item-button:focus {
    color: var(--accent-color-secondary);
+   background-color: var(--accent-color);
  }
  
  /* ==============END FILTERS======== */
 
  /* ==============WORK=========== */
- .work-title {
+ 
+ .work-list {
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 124px;
+ }
+
+ .work-list-item {
+   width: 370px;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   border: 1px solid #EEEEEE;
+   
+ }
+
+ .work-list-item:nth-child(3n) {
+   margin-right: 0;
+}
+ 
+.container-work-title {
+  display: block;
+  
+  margin: 24px 20px;
+  
+
+}
+  
+.work-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--secondary-color)
-  
- }
+  color: var(--secondary-color);
+  }
+
 
  .work-text {
   font-weight: 400;
